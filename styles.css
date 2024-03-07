@@ -20,6 +20,10 @@ body {
     margin-top: 25px;
 }
 
+h2 {
+    color: #ffffff;
+    font-weight: bolder;
+}
 
 p {
     color: #ffffff;
