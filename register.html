@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<title>Register Page</title>
+
+</head>
+<body>
+
+
+
+    <form action="register.html" method="post" style="max-width:500px;margin:auto">
+        <h2 class="register">Register Page</h2>  
+        <div class="login-link">
+            <a href="login_page.html">
+                <button class="button" onclick="goToLoginPage(event)">Log In</button>
+            </a>
+        </div>
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Username / StudentID" name="usrnm">
+        </div>
+
+        <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" placeholder="Password" name="psw">
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+
+    </form>
+
+    <script>
+      function goToLoginPage(event) {
+        event.preventDefault(); // Prevents the default form submission
+        window.location.href = "login_page.html";
+      }
+    </script>
+
+</body>
+</html>
+
